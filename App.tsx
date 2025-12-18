@@ -1,6 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { PERSONAL_INFO, EDUCATION_HISTORY, PROJECTS, PUBLICATIONS, PHOTOGRAPHY, SOCIAL_LINKS, FAVORITE_ALBUMS } from './constants';
+import { getAssetPath } from './utils';
 
 const App: React.FC = () => {
   const [welcomeMessage] = useState<string>("Welcome to my Official Digital Portal!");
@@ -101,7 +102,7 @@ const App: React.FC = () => {
           <div className="retro-border">
             <div className="section-title">PORTRAIT</div>
             <div className="p-2 text-center">
-              <img src={PERSONAL_INFO.avatar} alt="Avatar" className="w-32 h-100 mx-auto border border-gray-400 grayscale contrast-125 mb-2" />
+              <img src={getAssetPath(PERSONAL_INFO.avatar)} alt="Avatar" className="w-32 h-100 mx-auto border border-gray-400 grayscale contrast-125 mb-2" />
               <div className="font-bold text-red-700">{PERSONAL_INFO.name}</div>
               <div className="text-[10px] text-gray-600">{PERSONAL_INFO.title}</div>
             </div>
@@ -224,7 +225,7 @@ const App: React.FC = () => {
             <div className="space-y-4 mt-2">
               {PROJECTS.map((proj, idx) => (
                 <div key={idx} className="flex gap-4 border-b border-gray-200 pb-4">
-                  <img src={proj.thumbnail} alt={proj.title} className="w-40 h-24 object-cover border border-gray-400 shadow-sm shrink-0" />
+                  <img src={getAssetPath(proj.thumbnail)} alt={proj.title} className="w-40 h-24 object-cover border border-gray-400 shadow-sm shrink-0" />
                   <div>
                     <a href={proj.url} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-[#004276] hover:text-red-600 underline">
                       {proj.title}
@@ -297,7 +298,7 @@ const App: React.FC = () => {
                             {continentPhotos.map((photo, idx) => (
                               <div key={idx} className="text-center group">
                                 <div className="border border-gray-300 p-1 bg-white shadow-sm hover:shadow-md transition-shadow">
-                                  <img src={photo.url} alt={photo.caption} className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                                  <img src={getAssetPath(photo.url)} alt={photo.caption} className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                                 </div>
                                 <div className="bg-gray-100 mt-1 py-1 text-[9px] font-bold text-gray-700 truncate px-1">
                                   {photo.caption}
@@ -333,7 +334,7 @@ const App: React.FC = () => {
                                     {countryPhotos.map((photo, idx) => (
                                       <div key={idx} className="text-center group">
                                         <div className="border border-gray-300 p-1 bg-white shadow-sm hover:shadow-md transition-shadow">
-                                          <img src={photo.url} alt={photo.caption} className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                                          <img src={getAssetPath(photo.url)} alt={photo.caption} className="w-full aspect-square object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                                         </div>
                                         <div className="bg-gray-100 mt-1 py-1 text-[9px] font-bold text-gray-700 truncate px-1">
                                           {photo.caption}
