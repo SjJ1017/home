@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   title: "jiajun(dot)shen@epfl.ch",
   email: "jiajun.shen@epfl.ch",
   bio: "Currently pursuing a Master's degree in Digital Humanities at EPFL. Previously graduated from University of Chinese Academy of Sciences (UCAS) with a major in Artificial Intelligence. Passionate about LLMs and Linguistics.",
-  avatar: "/portrait/avatar.jpg", // Place your portrait image here
+  avatar: "portrait/avatar.jpg", // 去掉开头的斜杠
   resumeUrl: "#"
 };
 
@@ -51,21 +51,21 @@ export const PROJECTS: Project[] = [
     title: "The Market's Vote.",
     url: "https://sjj1017.github.io/ada_penta_data_story/",
     description: "An interactive exploration of artistic styles and data visualization techniques.",
-    thumbnail: "/project/markets-vote.jpg",
+    thumbnail: "project/markets-vote.jpg",
     date: "2025-12-21"
   },
   {
     title: "Universal Aesthetics: A Multimodal Perspective",
     url: "https://fdh.epfl.ch/index.php/Universal_Aesthetics_(Multimodal_Focus)",
     description: "Research on computational methods to quantify aesthetic values across different media.",
-    thumbnail: "/project/universal-aesthetics.jpg",
+    thumbnail: "project/universal-aesthetics.jpg",
     date: "2025-12-18"
   },
   {
     title: "Fast PDF Layout Segmentation with Transformer-Based Models",
     url: "https://github.com/SjJ1017/EPFL_ML_PROJECT",
     description: "PDF segmentation using transformer architectures, for EPFL ML course project.",
-    thumbnail: "/project/pdf-segmentation.jpg",
+    thumbnail: "project/pdf-segmentation.jpg",
     date: "2025-12-18"
   }
 ];
@@ -88,21 +88,21 @@ export const PUBLICATIONS: Publication[] = [
 ];
 
 export const PHOTOGRAPHY: Photo[] = [
-  { url: "/photo/switzerland/oeschinensee.jpg", caption: "Oeschinensee", country: "Switzerland" },
-  { url: "/photo/switzerland/lausanne.jpg", caption: "Lausanne", country: "Switzerland" },
-  { url: "/photo/switzerland/geneve.jpg", caption: "Genève", country: "Switzerland" },
-  { url: "/photo/china/thegreatewall.jpg", caption: "The Great Wall", country: "China" },
-  { url: "/photo/japan/Shinto.jpg", caption: "八坂神社", country: "Japan" },
-  { url: "/photo/japan/Tenshu.jpg", caption: "天守", country: "Japan" },
-  { url: "/photo/japan/Kyoto.jpg", caption: "京都", country: "Japan" },
-  { url: "/photo/japan/Kiyomizu.jpg", caption: "清水寺", country: "Japan" },  
-  { url: "/photo/denmark/Impressionism.jpg", caption: "Impressionism Park in Copenhagen", country: "Denmark" },
-  { url: "/photo/denmark/Nyhavn.jpg", caption: "Nyhavn", country: "Denmark" },
-  { url: "/photo/denmark/Kastellet.jpg", caption: "Kastellet", country: "Denmark" },
-  { url: "/photo/germany/Koelnerdom.jpg", caption: "Kölner Dom", country: "Germany" },
-  { url: "/photo/france/Latoureiffel.jpg", caption: "La Tour Eiffel", country: "France" },
-  { url: "/photo/usa/Alcatraz.jpg", caption: "Alcatraz Island", country: "USA" },
-  { url: "/photo/usa/universalCA.jpg", caption: "Universal Studios Hollywood", country: "USA" },
-  { url: "/photo/hungary/budapest-parliament.jpg", caption: "Hungarian Parliament and Champagne", country: "Hungary" },
-  { url: "/photo/hungary/danube-bridge.jpg", caption: "Bridge over Danube", country: "Hungary" }
+  { url: "photo/switzerland/oeschinensee.jpg", caption: "Oeschinensee", country: "Switzerland" },
+  { url: "photo/switzerland/lausanne.jpg", caption: "Lausanne", country: "Switzerland" },
+  { url: "photo/switzerland/geneve.jpg", caption: "Genève", country: "Switzerland" },
+  { url: "photo/china/thegreatewall.jpg", caption: "The Great Wall", country: "China" },
+  { url: "photo/japan/Shinto.jpg", caption: "八坂神社", country: "Japan" },
+  { url: "photo/japan/Tenshu.jpg", caption: "天守", country: "Japan" },
+  { url: "photo/japan/Kyoto.jpg", caption: "京都", country: "Japan" },
+  { url: "photo/japan/Kiyomizu.jpg", caption: "清水寺", country: "Japan" },  
+  { url: "photo/denmark/Impressionism.jpg", caption: "Impressionism Park in Copenhagen", country: "Denmark" },
+  { url: "photo/denmark/Nyhavn.jpg", caption: "Nyhavn", country: "Denmark" },
+  { url: "photo/denmark/Kastellet.jpg", caption: "Kastellet", country: "Denmark" },
+  { url: "photo/germany/Koelnerdom.jpg", caption: "Kölner Dom", country: "Germany" },
+  { url: "photo/france/Latoureiffel.jpg", caption: "La Tour Eiffel", country: "France" },
+  { url: "photo/usa/Alcatraz.jpg", caption: "Alcatraz Island", country: "USA" },
+  { url: "photo/usa/universalCA.jpg", caption: "Universal Studios Hollywood", country: "USA" },
+  { url: "photo/hungary/budapest-parliament.jpg", caption: "Hungarian Parliament and Champagne", country: "Hungary" },
+  { url: "photo/hungary/danube-bridge.jpg", caption: "Bridge over Danube", country: "Hungary" }
 ];
