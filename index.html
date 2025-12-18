@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SJJ's Global News Network - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+        body {
+            font-family: 'SimSun', 'Times New Roman', serif;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 12px;
+        }
+        .retro-border {
+            border: 1px solid #ddd;
+        }
+        .header-bg {
+            background-color: #004276;
+        }
+        .nav-bg {
+            background-color: #f2f2f2;
+            border-top: 2px solid #004276;
+            border-bottom: 1px solid #ccc;
+        }
+        .section-title {
+            background-color: #f7f7f7;
+            border-bottom: 2px solid #004276;
+            color: #004276;
+            font-weight: bold;
+            padding: 4px 8px;
+        }
+        .news-link:hover {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        .marquee-container {
+            background: #fff;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-text {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 20s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+        .animate-blink {
+            animation: blink 0.8s steps(1) infinite;
+        }
+        /* Make scrollbars look old */
+        ::-webkit-scrollbar { width: 12px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #888; border: 2px solid #f1f1f1; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="p-0 m-0">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
