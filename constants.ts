@@ -6,8 +6,8 @@ export const PERSONAL_INFO = {
   title: "jiajun(dot)shen@epfl.ch",
   email: "jiajun.shen@epfl.ch",
   bio: "Currently pursuing a Master's degree in Digital Humanities at EPFL. Previously graduated from University of Chinese Academy of Sciences (UCAS) with a major in Artificial Intelligence. Passionate about LLMs and Linguistics.",
-  avatar: "portrait/avatar.jpg", // 去掉开头的斜杠
-  resumeUrl: "https://github.com/SjJ1017/home/tree/main/public/pdfs/CV.pdf"
+  avatar: "portrait/avatar.jpg",
+  resumeUrl: "https://sjj1017.github.io/home/pdfs/CV.pdf"
 };
 
 export const SOCIAL_LINKS = [
@@ -70,7 +70,7 @@ export const PROJECTS: Project[] = [
   },
   {
     title: "Mindmap: Named Entity Recognition and Linking in Historical Texts In the Era of Large Language Models",
-    url: "https://github.com/SjJ1017/home/tree/main/public/pdfs/Mindmap_Final_titled.pdf",
+    url: "https://sjj1017.github.io/home/pdfs/Mindmap_Final_titled.pdf",
     description: "Mind Map for DH-400 at EPFL.",
     thumbnail: "public/project/dh400_mindmap.jpg",
     date: "2025-12-18"
