@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   email: "jiajun.shen@epfl.ch",
   bio: "Currently pursuing a Master's degree in Digital Humanities at EPFL. Previously graduated from University of Chinese Academy of Sciences (UCAS) with a major in Artificial Intelligence. Passionate about LLMs and Linguistics.",
   avatar: "portrait/avatar.jpg",
-  resumeUrl: "https://sjj1017.github.io/home/pdfs/CV.pdf"
+  resumeUrl: "pdfs/CV.pdf"
 };
 
 export const SOCIAL_LINKS = [
