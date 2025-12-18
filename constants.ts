@@ -7,13 +7,13 @@ export const PERSONAL_INFO = {
   email: "jiajun.shen@epfl.ch",
   bio: "Currently pursuing a Master's degree in Digital Humanities at EPFL. Previously graduated from University of Chinese Academy of Sciences (UCAS) with a major in Artificial Intelligence. Passionate about LLMs and Linguistics.",
   avatar: "portrait/avatar.jpg", // 去掉开头的斜杠
-  resumeUrl: "#"
+  resumeUrl: "https://github.com/SjJ1017/home/tree/main/public/pdfs/CV.pdf"
 };
 
 export const SOCIAL_LINKS = [
-  { name: "小红书", url: "https://xhslink.com/m/4XfpZrIx4Gz", icon: "�" },
-  { name: "GitHub", url: "https://github.com/SjJ1017", icon: "💻" },
-  { name: "LinkedIn", url: "https://www.linkedin.com/in/jiajun-shen-b32149321/", icon: "🔗" }
+  { name: "小红书", url: "https://xhslink.com/m/4XfpZrIx4Gz", icon: "" },
+  { name: "GitHub", url: "https://github.com/SjJ1017", icon: "" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/jiajun-shen-b32149321/", icon: "" }
 ];
 
 export const FAVORITE_ALBUMS = [
@@ -66,6 +66,13 @@ export const PROJECTS: Project[] = [
     url: "https://github.com/SjJ1017/EPFL_ML_PROJECT",
     description: "PDF segmentation using transformer architectures, for EPFL ML course project.",
     thumbnail: "project/pdf-segmentation.jpg",
+    date: "2025-12-18"
+  },
+  {
+    title: "Mindmap: Named Entity Recognition and Linking in Historical Texts In the Era of Large Language Models",
+    url: "https://github.com/SjJ1017/home/tree/main/public/pdfs/Mindmap_Final_titled.pdf",
+    description: "Mind Map for DH-400 at EPFL.",
+    thumbnail: "public/project/dh400_mindmap.jpg",
     date: "2025-12-18"
   }
 ];
