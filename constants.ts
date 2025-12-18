@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
     title: "Mindmap: Named Entity Recognition and Linking in Historical Texts In the Era of Large Language Models",
     url: "https://sjj1017.github.io/home/pdfs/Mindmap_Final_titled.pdf",
     description: "Mind Map for DH-400 at EPFL.",
-    thumbnail: "public/project/dh400_mindmap.jpg",
+    thumbnail: "project/dh400_mindmap.jpg",
     date: "2025-12-18"
   }
 ];
