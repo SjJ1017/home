@@ -3,7 +3,7 @@ import { Project, Publication, Photo, Education } from './types';
 
 export const PERSONAL_INFO = {
   name: "Jiajun Shen",
-  title: "jiajun(dot)shen@epfl.ch",
+  title: "jiajun[dot]shen[at]epfl.ch",
   email: "jiajun.shen@epfl.ch",
   bio: "Currently pursuing a Master's degree in Digital Humanities at EPFL. Previously graduated from University of Chinese Academy of Sciences (UCAS) with a major in Artificial Intelligence. Passionate about LLMs and Linguistics.",
   avatar: "portrait/avatar.jpg",
