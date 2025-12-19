@@ -61,9 +61,9 @@ const App: React.FC = () => {
       {/* Top Banner */}
       <header className="header-bg p-4 flex justify-between items-center text-white border-b-4 border-red-600">
         <div className="flex items-center space-x-4">
-          <div className="bg-red-600 p-2 text-2xl font-bold tracking-tighter">SHEN</div>
+          <div className="bg-red-600 p-2 text-2xl font-bold tracking-tighter">AI&DH</div>
           <div>
-            <h1 className="text-xl font-bold uppercase">Digital Humanities & Artificial Intelligence</h1>
+            <h1 className="text-xl font-bold uppercase">Jiajun Shen | Homepage</h1>
             <p className="text-[10px] italic">I learn, therefore I am.</p>
           </div>
         </div>
@@ -80,7 +80,7 @@ const App: React.FC = () => {
         <a href="#projects" className="hover:text-red-600 border-r border-gray-400 pr-4">PROJECTS</a>
         <a href="#academic" className="hover:text-red-600 border-r border-gray-400 pr-4">ACADEMIC</a>
         <a href="#gallery" className="hover:text-red-600 border-r border-gray-400 pr-4">GALLERY</a>
-        <a href={getAssetPath(PERSONAL_INFO.resumeUrl)} className="text-red-700 hover:underline">CV [PDF]</a>
+        <a href={PERSONAL_INFO.resumeUrl} className="text-red-700 hover:underline">CV [PDF]</a>
       </nav>
 
       {/* Marquee Area */}
@@ -223,23 +223,19 @@ const App: React.FC = () => {
           <div id="projects">
             <div className="section-title">EXCLUSIVE PROJECT REPORTS</div>
             <div className="space-y-4 mt-2">
-              {PROJECTS.map((proj, idx) => {
-                // 如果是本地文件（不以 http 开头），使用 getAssetPath
-                const projectUrl = proj.url.startsWith('http') ? proj.url : getAssetPath(proj.url);
-                return (
-                  <div key={idx} className="flex gap-4 border-b border-gray-200 pb-4">
-                    <img src={getAssetPath(proj.thumbnail)} alt={proj.title} className="w-40 h-24 object-cover border border-gray-400 shadow-sm shrink-0" />
-                    <div>
-                      <a href={projectUrl} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-[#004276] hover:text-red-600 underline">
-                        {proj.title}
-                      </a>
-                      <div className="text-[10px] text-gray-500 mb-1">Release Date: {proj.date} | Category: Interactive Report</div>
-                      <p className="text-[12px]">{proj.description}</p>
-                      <a href={projectUrl} className="text-red-600 font-bold text-[10px] hover:underline">[Read Detailed Report {'>>'}]</a>
-                    </div>
+              {PROJECTS.map((proj, idx) => (
+                <div key={idx} className="flex gap-4 border-b border-gray-200 pb-4">
+                  <img src={getAssetPath(proj.thumbnail)} alt={proj.title} className="w-40 h-24 object-cover border border-gray-400 shadow-sm shrink-0" />
+                  <div>
+                    <a href={proj.url} target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-[#004276] hover:text-red-600 underline">
+                      {proj.title}
+                    </a>
+                    <div className="text-[10px] text-gray-500 mb-1">Release Date: {proj.date} | Category: Interactive Report</div>
+                    <p className="text-[12px]">{proj.description}</p>
+                    <a href={proj.url} className="text-red-600 font-bold text-[10px] hover:underline">[Read Detailed Report {'>>'}]</a>
                   </div>
-                );
-              })}
+                </div>
+              ))}
             </div>
           </div>
 
@@ -372,7 +368,7 @@ const App: React.FC = () => {
           <a href="#" className="hover:underline ml-2">Sitemap</a>
         </div>
         <div>
-          Copyright &copy; 2005-2025 SJJ Information Network Center. All Rights Reserved.
+          Copyright &copy; Dec. 19 2025. All Rights Reserved.
         </div>
         <div className="mt-2 text-red-800 font-bold">
           Empowered by Artificial Intelligence & Digital Humanities.
