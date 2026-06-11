@@ -28,7 +28,9 @@ const App: React.FC = () => {
   const handleSendEmail = (e: React.FormEvent) => {
     e.preventDefault();
     if (!contactText.trim()) return;
-    const mailtoUrl = `mailto:${PERSONAL_INFO.email}?subject=Message from Portal Reader&body=${encodeURIComponent(contactText)}`;
+    const subject = encodeURIComponent("Message from Portal Reader");
+    const body = encodeURIComponent(contactText);
+    const mailtoUrl = `mailto:${PERSONAL_INFO.email}?subject=${subject}&body=${body}`;
     window.location.href = mailtoUrl;
     setContactText("");
   };
@@ -232,7 +234,7 @@ const App: React.FC = () => {
                     </a>
                     <div className="text-[10px] text-gray-500 mb-1">Release Date: {proj.date} | Category: Interactive Report</div>
                     <p className="text-[12px]">{proj.description}</p>
-                    <a href={proj.url} className="text-red-600 font-bold text-[10px] hover:underline">[Read Detailed Report {'>>'}]</a>
+                    <a href={proj.reportUrl || proj.url} target="_blank" rel="noopener noreferrer" className="text-red-600 font-bold text-[10px] hover:underline">[Read Detailed Report {'>>'}]</a>
                   </div>
                 </div>
               ))}

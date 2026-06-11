@@ -48,6 +48,22 @@ export const EDUCATION_HISTORY: Education[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "RPNR: Read the Prompt, Not the README",
+    url: "https://github.com/SjJ1017/open-project-m3-algo-iii-4",
+    description: "A multi-surface benchmark measuring indirect prompt injection in GitHub MCP coding agents, jointly scoring clean-task utility and attack success across repo files, issues, PRs, and comments. CS-552 Modern NLP open project.",
+    thumbnail: "project/rpnr.svg",
+    date: "2026-06-06",
+    reportUrl: "https://github.com/SjJ1017/open-project-m3-algo-iii-4/blob/main/report/CS552_Final_Report.pdf"
+  },
+  {
+    title: "Intrinsic Tokenizer Metrics for Multilingual Transfer",
+    url: "https://github.com/epfl-nlp/-intrinsic-metrics-multilingual",
+    description: "Semester project studying which intrinsic tokenizer metrics predict downstream model performance for languages absent from tokenizer training, via bilingual transfer and cross-lingual adaptation experiments.",
+    thumbnail: "project/multilingual-metrics.jpg",
+    date: "2026-06-06",
+    reportUrl: "https://github.com/epfl-nlp/-intrinsic-metrics-multilingual/blob/main/report/Jiajun_sp_26.pdf"
+  },
+  {
     title: "The Market's Vote.",
     url: "https://sjj1017.github.io/ada_penta_data_story/",
     description: "An interactive exploration of artistic styles and data visualization techniques.",

@@ -5,6 +5,7 @@ export interface Project {
   description: string;
   thumbnail: string;
   date: string;
+  reportUrl?: string;
 }
 
 export interface Publication {
